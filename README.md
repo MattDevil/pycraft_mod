@@ -17,9 +17,15 @@ Go to the release page and download the last version of the Pycraft_Minetest.exe
 * Install Luarocks for your version of Lua
 * In a terminal execute this command as superuser: luarocks install luasocket
 * Follow this tutorial on how to install a mod in Minetest: http://dev.minetest.net/Installing_Mods. We suggest to clone this repository inside the "mods" folder of Minetest.
+* Add "collections.Iterable = collections.abc.Iterable" just after the line "import collections" in pycraft_mod/mcpipy/mcpi/util.py
+* In .minetest/minetest.conf add "secure.enable_security = false" or add "secure.trusted_mods = pycraft_mod"
 * Create a world (it's better to enable creative mode)
 * Click on "configure" and enable "pycraft_mod"
-* Play the game
+* Play the game, press "escape"
+* In a terminal : python ~/.minetest/mods/pycraft_mod/mcpipy/helloworld.py
+* You should have a message in the chat, and a diamond block under your feet !
+* Write a new python script in ~/.minetest/mods/pycraft_mod/mcpipy/ and enjoy !
+
 
 ## MAC OSX
 Work in progress...
