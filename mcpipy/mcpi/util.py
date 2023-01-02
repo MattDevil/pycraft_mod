@@ -1,4 +1,5 @@
 import collections
+collections.Iterable = collections.abc.Iterable
 import math
 
 def flatten(l):
